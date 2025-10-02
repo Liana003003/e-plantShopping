@@ -86,7 +86,7 @@ body {
     margin-bottom: 10px;
 }
 
-.product-price {
+.product-cost {
     color: #e74c3c;
     font-size: 1.2rem;
     margin-bottom: 10px;
@@ -109,6 +109,17 @@ body {
 
 .product-button:hover {
     background-color: #c0392b;
+}
+
+.cart-count-badge {
+  position: absolute;
+  top: 18px;
+  right: 20px;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 4px 8px;
+  border-radius: 50%;
 }
 
 /* Pseudo-elements - Sale badge */
@@ -215,7 +226,7 @@ body {
     background-color: #45a049;
   }
   
-  .product-button.added-to-cart {
+  .product-button:disabled {
     background-color: grey; /* Grey when product is added */
   }
   @media (max-width: 1200px) {
